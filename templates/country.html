@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    table,tr,th,td
+    {
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+    }
+  </style>
+
+</head>
+<body>
+  <center>
+
+    <h1>Displaying Topic Table</h1>
+
+    <table>
+      <tr>
+        <th>ctid</th>
+        <th>ctname</th>
+      </tr>
+      {% for co in Country %}
+        <tr>
+          <td>{{ co.ctid }}</td>
+          <td>{{ co.ctname }}</td>
+        </tr>
+      {% endfor %}
+
+    </table>
+  </center>
+</body>
+</html>
